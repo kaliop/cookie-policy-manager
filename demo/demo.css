@@ -1,0 +1,87 @@
+:root {
+    --color-dark: #021b2f;
+    --color-light: #4ed9c7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    max-width: 40em;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    margin: 0 .25em;
+    padding: .15em .35em;
+    border: solid 1px;
+    font: inherit;
+    font-size: 80%;
+    color: inherit;
+    background: none;
+}
+button:active {
+    transform: translate(.1em, .1em);
+}
+
+h1 {
+    font-size: 1.8em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+h2 {
+    margin-top: 1.5em;
+    font-size: 1.25em;
+}
+
+.Content {
+    padding: 10vh 10%;
+    border: solid 3px;
+    text-align: center;
+}
+
+.CookieNotice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+.CookieNotice[hidden] {
+    display: none;
+}
+
+.CookieNotice p {
+    margin: 0;
+    padding: .5em;
+}
+
+.CookieNotice-close {
+    margin-left: 1em;
+    padding: .6em 1.2em;
+    flex-shrink: 0;
+    border: solid 2px var(--color-dark);
+    font: inherit;
+    color: inherit;
+    font-weight: bold;
+    background: none;
+}
+.CookieNotice-close:hover,
+.CookieNotice-close:focus {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+@media (min-width:25em) {
+    html { padding: 20px; } 
+    body { font-size: 120%; }
+    h1 { font-size: 2.2em; }
+    .Content { padding: 20vh 15%; }
+}

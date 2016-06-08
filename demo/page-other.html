@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Info page - CookiePolicyManager</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<aside class="CookieNotice" hidden>
+    <p>Yay you need to accept cookies yada yada.
+    <a href="./page-info.html" class="CookieNotice-more">More info on cookies</a></p>
+    <button class="CookieNotice-close">OK</button>
+</aside>
+
+<main class="Content">
+    <h1>Other page</h1>
+    <p>
+        Another page, which counts as user navigation if this is not the first one you’ve seen.
+        The script should record an implicit agreement now, and make the banner disappear.
+    </p>
+    <p>
+        <a href="./index.html">Back to main page</a>
+    </p>
+</main>
+
+<script src="./../cookiepolicymanager.min.js"></script>
+<script src="./demo.js"></script>
+
+</body>
+</html>

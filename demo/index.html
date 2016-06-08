@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test home - CookiePolicyManager</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<aside class="CookieNotice" hidden>
+    <p>Yay you need to accept cookies yada yada.
+    <a href="./page-info.html" class="CookieNotice-more">More info on cookies</a></p>
+    <button class="CookieNotice-close">OK</button>
+</aside>
+
+<main class="Content">
+    <h1>Start page</h1>
+    <p>
+        In this example the cookie information banner is hidden by default
+        (using the <code>hidden</code> HTML5 attribute), and we use JS to
+        reveal it if we don’t have a user agreement already.
+    </p>
+    <p>
+        Go to <a href="./page-other.html">another page</a>, maybe?
+    </p>
+    <h2>Did you hide the banner already?</h2>
+    <p>
+        You can <button onclick="cookiepm.clear();location.reload()">reset data and refresh</button>
+    </p>
+</main>
+
+<script src="./../cookiepolicymanager.min.js"></script>
+<script src="./demo.js"></script>
+
+</body>
+</html>
