@@ -6,11 +6,11 @@ This script helps you manage the requirements of EU cookie regulations, while en
 2. Detecting user navigation to a second page, which counts as implicit consent *provided you have shown a notice to the user*.
 3. Executing one or several functions (callbacks) *when* the user consents to tracking cookies, *or* on page load if consent was already given and recorded.
 
-This script does *not* provide a user interface, such as a cookie “banner”. You will have to build your own UI, and write a JS script for basic features such as showing or hiding the UI, adding event listeners to buttons, etc. If that looks intimidating, you can [look at our demo](./demo/) for inspiration.
+This script does *not* provide a user interface, such as a cookie “banner”. You will have to build your own UI, and write a JS script for basic features such as showing or hiding the UI, adding event listeners to buttons, etc. If that looks intimidating, you can [look at our demo][DEMO] for inspiration.
 
-Read more about the legal side: [gov.uk guide](https://www.gov.uk/service-manual/making-software/cookies) and [CNIL guide (in French)](https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi).
+Read more about the legal side: [gov.uk guide][GOV_UK_GUIDE] and [CNIL guide (in French)][CNIL_GUIDE].
 
-## `CookiePolicyManager` usage
+## Usage
 
 These examples use native JavaScript (and DOM) methods, but you can convert to jQuery-based code if you like it better. Basic usage of `CookiePolicyManager` might look like this: 
 
@@ -50,7 +50,7 @@ denyButton && denyButton.addEventListener('click', function(){
 });
 ```
 
-Want to see a different example? Look at [our demo’s script](./demo/demo.js).
+Want to see a different example? Look at [our demo’s script][DEMO_JS].
 
 ## Options and methods
 
@@ -86,9 +86,9 @@ Like any HTML content, it can be rendered by the browser before your script has 
 </aside>
 ```
 
-And then remove the `hidden` attribute if the `cookiepm.status().allowed` property is false. See [the demo script](./demo/demo.js) for an example of that behavior.
+And then remove the `hidden` attribute if the `cookiepm.status().allowed` property is false. See [the demo script][DEMO_JS] for an example of that behavior.
 
-### I’m calling `update()` but my banner is still there
+### I’m calling update() but my banner is still there
 
 Are you calling `CookiePolicyManager().update('explicit', 'something')`?
 
@@ -111,3 +111,8 @@ In Private Browsing mode, Safari (on iOS at least) doesn’t allow access to loc
 ### So this solution relies on JavaScript?
 
 Yep. This shouldn’t be an issue because all tracking, analytics etc. tools targetted by the EU regulations tend to be JavaScript-only, too, so if a user has disabled JS your probably respect EU regulations already. Note that session cookies, authentification cookies and shopping cart cookies are always valid and require no consent.
+
+[DEMO]: https://gradientz.github.io/cookiepolicymanager/demo/
+[DEMO_JS]: https://gradientz.github.io/cookiepolicymanager/demo/demo.js
+[GOV_UK_GUIDE]: https://www.gov.uk/service-manual/making-software/cookies
+[CNIL_GUIDE]: https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi
