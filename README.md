@@ -112,7 +112,7 @@ In Private Browsing mode, Safari (on iOS at least) doesn’t allow access to loc
 
 Yep. This shouldn’t be an issue because all tracking, analytics etc. tools targetted by the EU regulations tend to be JavaScript-only, too, so if a user has disabled JS your probably respect EU regulations already. Note that session cookies, authentification cookies and shopping cart cookies are always valid and require no consent.
 
-[DEMO]: https://gradientz.github.io/CookiePolicyManager/demo/
-[DEMO_JS]: https://gradientz.github.io/CookiePolicyManager/demo/demo.js
+[DEMO]: https://gradientz.github.io/cookie-policy-manager/demo/
+[DEMO_JS]: https://gradientz.github.io/cookie-policy-manager/demo/demo.js
 [GOV_UK_GUIDE]: https://www.gov.uk/service-manual/making-software/cookies
 [CNIL_GUIDE]: https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi
