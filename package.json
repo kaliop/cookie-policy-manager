@@ -1,7 +1,7 @@
 {
-    "name": "cookiepolicymanager",
-    "version": "1.0.0",
-    "description": "Helps you manage the requirements of EU cookie regulations, while enabling a good user experience",
-    "author": "Florens Verschelde <florens@fvsch.com>",
-    "license": "MIT"
+  "name": "cookiepolicymanager",
+  "version": "1.0.0",
+  "description": "Helps you manage the requirements of EU cookie regulations, while enabling a good user experience",
+  "author": "Florens Verschelde <florens@fvsch.com>",
+  "license": "MIT"
 }
